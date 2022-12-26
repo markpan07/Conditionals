@@ -4,7 +4,7 @@ public class Main {
         System.out.println();
         task2();
         System.out.println();
-        //task3();
+        task3();
         System.out.println();
     }
 
@@ -32,15 +32,15 @@ public class Main {
         }
     }
 
-    /*public static void task3() {
-        System.out.println("Задача 2");
-        int age = 17;
-        System.out.print("Если возраст члеовека равен " + age + " лет, то ");
+    public static void task3() {
+        System.out.println("Задача 3");
+        int speed = 62;
+        System.out.print("Если скорость " + speed + " км/ч, то ");
 
-        if(age>=18) {
-            System.out.println("он совершеннолетний");
+        if(speed > 60) {
+            System.out.println("придется заплатить штраф");
         } else {
-            System.out.println("он не достиг совершеннолетия, нужно немного подождать");
+            System.out.println("можно ездить спокойно");
         }
-    }*/
+    }
 }
