@@ -8,9 +8,9 @@ public class Main {
         System.out.println();
         task4();
         System.out.println();
-        /*task5();
+        task5();
         System.out.println();
-        task6();
+        /*task6();
         System.out.println();
         task7();
         System.out.println();*/
@@ -72,5 +72,24 @@ public class Main {
         if (age > 24) {
             System.out.println("на работу");
         }
+    }
+
+    public static void task5() {
+        System.out.println("Задача 5");
+        int age = 15;
+        System.out.print("Если возраст ребенка равен " + age + ", то ему ");
+
+        if (age < 5) {
+            System.out.println("нельзя кататься на аттракционе");
+        }
+
+        if (age >= 5 && age <14) {
+            System.out.println("можно кататься на аттракционе в сопровождении взрослого");
+        }
+
+        if (age >= 14) {
+            System.out.println("можно кататься на аттракционе без сопровождения взрослого");
+        }
+
     }
 }
