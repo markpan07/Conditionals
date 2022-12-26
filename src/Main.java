@@ -10,9 +10,9 @@ public class Main {
         System.out.println();
         task5();
         System.out.println();
-        /*task6();
+        task6();
         System.out.println();
-        task7();
+        /*task7();
         System.out.println();*/
     }
 
@@ -83,13 +83,38 @@ public class Main {
             System.out.println("нельзя кататься на аттракционе");
         }
 
-        if (age >= 5 && age <14) {
+        if (age >= 5 && age < 14) {
             System.out.println("можно кататься на аттракционе в сопровождении взрослого");
         }
 
         if (age >= 14) {
             System.out.println("можно кататься на аттракционе без сопровождения взрослого");
         }
+    }
+
+
+    public static void task6() {
+        System.out.println("Задача 6");
+        int yourNumber = 105;
+        int carriageCapacity = 102;
+        int seatPlace = 60;
+        int standingPlace = carriageCapacity - seatPlace;
+        boolean thereIsSeatPlace = yourNumber > 0 && yourNumber <= 60;
+        boolean thereIsStandingPlace = yourNumber > 60 && yourNumber <= 102;
+        //boolean carriageIsFull = yourNumber > 102;
+
+        System.out.print("Если ваш номер в очереди " + yourNumber);
+
+        if (thereIsSeatPlace || thereIsStandingPlace) {
+            if (thereIsSeatPlace) {
+                System.out.println(" вы можете купить сидячее или стоячее место.");
+            }
+            if (thereIsStandingPlace) {
+                System.out.println(", вы можете купить стоячее место, сидячих не осталось.");
+            }
+        } else {
+                System.out.println(", вагон уже полон, мест нет.");
+            }
 
     }
 }
