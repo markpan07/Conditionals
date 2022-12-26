@@ -12,8 +12,8 @@ public class Main {
         System.out.println();
         task6();
         System.out.println();
-        /*task7();
-        System.out.println();*/
+        task7();
+        System.out.println();
     }
 
     public static void task1() {
@@ -92,7 +92,6 @@ public class Main {
         }
     }
 
-
     public static void task6() {
         System.out.println("Задача 6");
         int yourNumber = 105;
@@ -116,5 +115,22 @@ public class Main {
                 System.out.println(", вагон уже полон, мест нет.");
             }
 
+    }
+
+    public static void task7() {
+        System.out.println("Задача 6");
+        int one = 200;
+        int two = 300;
+        int three = 150;
+
+        if (one > two && one > three) {
+            System.out.println(one);
+        } else {
+            if (two > one && two > three) {
+                System.out.println(two);
+            } else {
+                System.out.println(three);
+            }
+        }
     }
 }
